@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Alquiler Vacacional en Mallorca</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <!-- Cambiado para usar el nombre correcto del archivo CSS proporcionado -->
+    <link rel="stylesheet" href="ai_studio_code.css">
+    <!-- Enlace a una fuente de Google Fonts para un mejor aspecto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="#">VacacionalMallorca</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Propiedades</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#" class="btn btn-secondary">Acceso Propietarios</a>
+        </div>
+        <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Encuentra tu casa de vacaciones ideal en Mallorca</h1>
+                <p>Explora nuestras villas, fincas y apartamentos exclusivos.</p>
+                
+                <form class="search-form" id="search-form">
+                    <div class="form-group">
+                        <label for="destination">Destino</label>
+                        <input type="text" id="destination" placeholder="Ej: Palma, Alcúdia...">
+                    </div>
+                    <div class="form-group">
+                        <label for="arrival">Llegada</label>
+                        <input type="date" id="arrival">
+                    </div>
+                    <div class="form-group">
+                        <label for="departure">Salida</label>
+                        <input type="date" id="departure">
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Huéspedes</label>
+                        <input type="number" id="guests" min="1" value="2">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="destinations-section">
+            <h2>Destinos Populares</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Palma" alt="Palma de Mallorca">
+                    <h3>Palma de Mallorca</h3>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Alcúdia" alt="Alcúdia">
+                    <h3>Alcúdia</h3>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Sóller" alt="Sóller">
+                    <h3>Sóller</h3>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Pollença" alt="Pollença">
+                    <h3>Pollença</h3>
+                </div>
+            </div>
+        </section>
+
+         <section class="advantages-section">
+            <h2>¿Por qué reservar con nosotros?</h2>
+            <div class="advantages-grid">
+                <div class="advantage">
+                    <div class="icon">✓</div>
+                    <h3>Mejor Precio Garantizado</h3>
+                    <p>Encuentra las mejores ofertas directamente.</p>
+                </div>
+                <div class="advantage">
+                    <div class="icon">♥</div>
+                    <h3>Propiedades Verificadas</h3>
+                    <p>Calidad y confianza en cada estancia.</p>
+                </div>
+                <div class="advantage">
+                    <div class="icon">?</div>
+                    <h3>Atención Personalizada</h3>
+                    <p>Estamos aquí para ayudarte 24/7.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 VacacionalMallorca. Todos los derechos reservados.</p>
+            <p><a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+        </div>
+    </footer>
+    
+    <!-- Enlace al archivo JavaScript -->
+    <!-- Cambiado para usar el nombre correcto del archivo JavaScript proporcionado -->
+    <script src="ai_studio_code.js"></script>
+</body>
+</html>

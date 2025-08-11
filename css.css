@@ -1,0 +1,246 @@
+/* ---- VARIABLES Y ESTILOS GLOBALES ---- */
+:root {
+    --primary-color: #0077c0;
+    --secondary-color: #f7a825;
+    --dark-color: #222;
+    --light-color: #fff;
+    --text-color: #555;
+    --font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+.btn-primary:hover {
+    background-color: #e0941c;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+/* ---- HEADER Y NAVEGACIÓN ---- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--light-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 2rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.main-nav a:hover {
+    color: var(--primary-color);
+}
+
+.mobile-menu-btn { display: none; } /* Oculto en escritorio */
+
+/* ---- HERO SECTION ---- */
+.hero-section {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x1080.png?text=Playa+de+Mallorca');
+    background-size: cover;
+    background-position: center;
+    color: var(--light-color);
+    text-align: center;
+    padding: 8rem 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: var(--light-color);
+    margin-bottom: 1rem;
+}
+
+/* ---- FORMULARIO DE BÚSQUEDA ---- */
+.search-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font-family);
+}
+
+/* ---- SECCIONES DE TARJETAS (GRID) ---- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h3 {
+    padding: 1rem;
+    margin: 0;
+}
+
+/* ---- SECCIÓN VENTAJAS ---- */
+.advantages-section { background-color: #f9f9f9; }
+
+.advantages-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.advantage .icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+.advantage h3 { font-size: 1.2rem; }
+
+/* ---- FOOTER ---- */
+.main-footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+.main-footer a {
+    color: var(--light-color);
+}
+
+/* ---- DISEÑO RESPONSIVE PARA MÓVILES ---- */
+@media (max-width: 768px) {
+    .main-nav, .header-actions { display: none; }
+    .mobile-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .main-header {
+        justify-content: space-between;
+    }
+    .main-nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 1rem 0;
+    }
+     .main-nav.active li {
+        margin: 0;
+        text-align: center;
+        padding: 0.8rem 0;
+    }
+    .hero-content h1 { font-size: 2rem; }
+    .search-form { flex-direction: column; align-items: stretch; }
+}
